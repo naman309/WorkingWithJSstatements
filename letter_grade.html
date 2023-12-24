@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Conversion</title>
+</head>
+
+<body>
+    <script>
+
+        // Creating a variable 'i' having a value '1'.
+        var i = 1;
+
+        //Using while loop, so that it will be a never ending loop.
+        while (i > 0) {
+
+            // Storing a value of the user in a variable name 'numberGrade'
+            var numberGrade = prompt("Enter number grade from 0 to 100 \nOr enter 999 to end enteries");
+            numberGrade = parseInt(numberGrade);
+
+            // If value enetered by user is '999' it will exit the application and will come out of while loop.
+            if (numberGrade == 999) {
+                break;
+            }
+
+            // If value enetered by user is in range of 88 - 100, grade 'A' will be assigned.
+            else if (numberGrade >= 88 && numberGrade <= 100) {
+                var a = "A";
+                alert("Number grade = " + numberGrade + "\nLetter grade = " + a);
+            }
+
+            // If value enetered by user is in range of 80 - 87, grade 'B' will be assigned.
+            else if (numberGrade >= 80 && numberGrade <= 87) {
+                var b = "B";
+                alert("Number grade = " + numberGrade + "\nLetter grade = " + b);
+            }
+
+            // If value enetered by user is in range of 68 - 79, grade 'C' will be assigned.
+            else if (numberGrade >= 68 && numberGrade <= 79) {
+                var c = "C";
+                alert("Number grade = " + numberGrade + "\nLetter grade = " + c);
+            }
+
+            // If value enetered by user is in range of 60 - 67, grade 'D' will be assigned.
+            else if (numberGrade >= 60 && numberGrade <= 67) {
+                var d = "D";
+                alert("Number grade = " + numberGrade + "\nLetter grade = " + d);
+            }
+
+            // If value enetered by user is less than 60, grade 'F' will be assigned.
+            else if (numberGrade < 60) {
+                var f = "F";
+                alert("Number grade = " + numberGrade + "\nLetter grade = " + f);
+            }
+
+            else {
+
+            }
+
+        }
+    </script>
+
+    <!-- After conversion, a page in which 'This page is displayed after the JavaScript is executed' is displayed. -->
+    <h1>This page is displayed after the JavaScript is executed</h1>
+
+</body>
+
+</html>

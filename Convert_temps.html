@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    <script>
+        /* Declaring variable of farehnite and storing the value enetered in prompt box in variable. */
+        var fahrenheit = prompt("Enter Fahrenheit temperature"); 
+        fahrenheit = parseFloat(fahrenheit);
+        
+        /* Converting fahrenheit to celsius and storing the result in celsius variable. */
+        var celsius = (fahrenheit-32)*(5/9);
+        celsius = parseFloat(celsius); 
+        
+        /* Displaying an alert box with the final output. */
+        alert("Fahrenheit temperature is  "+fahrenheit +
+        "\n\nCelsius temperature is  "+celsius);
+        
+    </script>
+
+    <h1>Thanks for using the temperature converter</h1> 
+    <!-- Final page which will be displayed after successful conversion of temperature. -->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion -- Validation</title>
+</head>
+
+<body>
+    <script>
+
+        // Creating a variable 'i' having a value '1'.
+        var i = 1;
+
+        //Using while loop, so that it will be a never ending loop.
+        while (i > 0) 
+        {
+            /* Declaring variable of farehnite and storing the value enetered in prompt box in variable. */
+            var fahrenheit = prompt("Enter Farehnite temperature"); 
+            fahrenheit = parseFloat(fahrenheit);
+
+            /* If fahrenheit value eneterd is '999' it will exit the application.
+             Using 'break' to exit the while loop. */
+            if (fahrenheit == 999) {
+                break;
+            }
+
+            // If fahrenheit value enetered is in range '-100' to '212' then it will convert fahrenhit temp to celcius.
+            if (fahrenheit >= -100 && fahrenheit <= 212) {
+                var Celsius = (fahrenheit - 32) * (5 / 9);
+                Celsius = parseInt(Celsius);
+
+                alert("Fahrenheit temperature is  " + fahrenheit +
+                    "\n\nCelsius temperature is  " + Celsius);
+            }
+
+            // If fahrenheit value enetered is greater than '212' and less than '-100' an alert box will be displayed.
+            else {
+                alert("You entered " + fahrenheit+"."+ "\nEntry must range from -100 to +212.");
+            }
+        }
+    </script>
+
+    <!-- After conversion, a page in which 'Thanks for using the temperature converter' is displayed. -->
+    <h1>Thanks for using the temperature converter</h1>
+
+</body>
+
+</html>
